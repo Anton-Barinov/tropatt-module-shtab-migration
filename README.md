@@ -1,126 +1,38 @@
-# Shtab.app Migration
+# Миграция из Shtab.app
 
-Secure import of official Shtab.app CSV/XLSX exports into TropaTT.
+Безопасный импорт официальных CSV/XLSX-экспортов Shtab.app в TropaTT
 
 A module for the [TropaTT](https://github.com/Anton-Barinov/TropaTT) self-hosted CRM and work platform.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**Languages:** [English](#english) · [Русский](#русский) · [中文](#中文)
-
-## English
-
-### About
-
-Secure import of official Shtab.app CSV/XLSX exports into TropaTT.
-
-### Module info
+## Details
 
 | Field | Value |
 |---|---|
-| Module | `crm.shtab-migration` |
+| Module Code | `crm.shtab-migration` |
 | Version | `1.1.0` |
 | Category | Migration |
-| Core | `>=1.0.0` |
-| Required permissions | project.manage, task.manage, import.manage |
+| Core Compatibility | `>=1.0.0` |
 | Author | [Anton Barinov](https://github.com/Anton-Barinov) |
 
-### Installation
+## Installation
 
-1. In TropaTT open **Admin → Modules → Install**.
-2. Choose one of:
-   - **Install from URL:** `https://github.com/Anton-Barinov/tropatt-module-shtab-migration/releases/download/v1.1.0/crm.shtab-migration-1.1.0.zip`
-   - **Upload archive:** download the release `.zip` and upload it manually.
-3. Activate the module and configure it in **Admin → Modules**.
+### Method 1: TropaTT Marketplace (Recommended)
 
-### Repository layout
+1. In your TropaTT CRM, navigate to **Admin → Modules → Marketplace**.
+2. Search for **Миграция из Shtab.app** (`crm.shtab-migration`).
+3. Click **Install**.
 
-- `upload/` — the module itself (what gets installed).
-- `LICENSE` — MIT license.
-- `SECURITY.md` — how to report vulnerabilities.
+### Method 2: Manual ZIP Upload
 
-### Requirements
+1. Download `crm.shtab-migration-1.1.0.zip` from the [Releases](https://github.com/Anton-Barinov/tropatt-module-shtab-migration/releases) tab.
+2. In TropaTT CRM, navigate to **Admin → Modules**.
+3. Click **Upload Module** and select the downloaded ZIP file.
+4. Activate and configure the module in **Admin → Modules**.
 
-- TropaTT (PHP 8.1+, MySQL), `core_version` `>=1.0.0`.
+## Repository Layout
 
-### License
-
-[MIT](LICENSE) © Anton Barinov
-
-## Русский
-
-### О модуле
-
-Безопасный импорт официальных CSV/XLSX-экспортов Shtab.app в TropaTT
-
-### Информация о модуле
-
-| Поле | Значение |
-|---|---|
-| Модуль | `crm.shtab-migration` |
-| Версия | `1.1.0` |
-| Категория | Миграция |
-| Ядро | `>=1.0.0` |
-| Требуемые права | project.manage, task.manage, import.manage |
-| Автор | [Anton Barinov](https://github.com/Anton-Barinov) |
-
-### Установка
-
-1. В TropaTT откройте **Админ → Модули → Установка**.
-2. Выберите один из вариантов:
-   - **Установка по URL:** `https://github.com/Anton-Barinov/tropatt-module-shtab-migration/releases/download/v1.1.0/crm.shtab-migration-1.1.0.zip`
-   - **Загрузка архива:** скачайте `.zip` из релиза и загрузите вручную.
-3. Активируйте модуль и настройте его в **Админ → Модули**.
-
-### Структура репозитория
-
-- `upload/` — сам модуль (то, что устанавливается).
-- `LICENSE` — лицензия MIT.
-- `SECURITY.md` — как сообщать об уязвимостях.
-
-### Требования
-
-- TropaTT (PHP 8.1+, MySQL), `core_version` `>=1.0.0`.
-
-### Лицензия
-
-[MIT](LICENSE) © Anton Barinov
-
-## 中文
-
-### 关于
-
-将 Shtab.app 官方 CSV/XLSX 导出文件安全导入 TropaTT。
-
-### 模块信息
-
-| 字段 | 值 |
-|---|---|
-| 模块 | `crm.shtab-migration` |
-| 版本 | `1.1.0` |
-| 类别 | 迁移 |
-| 内核 | `>=1.0.0` |
-| 所需权限 | project.manage, task.manage, import.manage |
-| 作者 | [Anton Barinov](https://github.com/Anton-Barinov) |
-
-### 安装
-
-1. 在 TropaTT 中打开 **管理 → 模块 → 安装**。
-2. 选择以下方式之一：
-   - **从 URL 安装：** `https://github.com/Anton-Barinov/tropatt-module-shtab-migration/releases/download/v1.1.0/crm.shtab-migration-1.1.0.zip`
-   - **上传压缩包：** 下载 release 中的 `.zip` 并手动上传。
-3. 在 **管理 → 模块** 中激活并配置模块。
-
-### 仓库结构
-
-- `upload/` — 模块本身（被安装的内容）。
-- `LICENSE` — MIT 许可证。
-- `SECURITY.md` — 如何报告漏洞。
-
-### 要求
-
-- TropaTT（PHP 8.1+、MySQL），`core_version` `>=1.0.0`。
-
-### 许可证
-
-[MIT](LICENSE) © Anton Barinov
+- `upload/` — Module source code and assets installed into CRM (`manifest.json`, `api/`, `web/`).
+- `LICENSE` — MIT License.
+- `SECURITY.md` — Security policy.

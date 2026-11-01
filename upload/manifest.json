@@ -10,18 +10,34 @@
     "license": "MIT",
     "category": "migration",
     "dependencies": [],
-    "require_permissions": ["project.manage", "task.manage", "import.manage"],
+    "require_permissions": [
+        "project.manage",
+        "task.manage",
+        "import.manage"
+    ],
     "api_routes": "api/config/routes.php",
     "web_routes": "web/config/routes.php",
     "migrations": "api/migration/",
-    "assets": {"js_routes": {"module-shtab-migration": "web/assets/js/shtab-migration.js"}, "css": ["web/assets/css/shtab-migration.css"]},
-    "hooks": {},
+    "assets": {
+        "js_routes": {
+            "module-shtab-migration": "web/assets/js/shtab-migration.js"
+        },
+        "css": [
+            "web/assets/css/shtab-migration.css"
+        ]
+    },
+    "hooks": [],
     "menu_items": [],
     "service_provider": "Module\\Crm\\ShtabMigration\\ShtabMigrationServiceProvider",
     "config_defaults": {
         "max_upload_size_mb": 20,
         "default_batch_size": 100,
         "max_rows_per_job": 100000,
-        "supported_extensions": ["csv", "txt", "xlsx"]
-    }
+        "supported_extensions": [
+            "csv",
+            "txt",
+            "xlsx"
+        ]
+    },
+    "signature": "67062d593848e4bc199b5d33e9ccb5423425994e2cd61ce0b86076a4c39b4f8d"
 }
